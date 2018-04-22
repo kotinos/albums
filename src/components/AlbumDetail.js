@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './Button';
 
 //POSITIONING
 //image | (album title over album artist)
@@ -33,6 +34,9 @@ const { thumbnailStyle, headerContentStyle, thumbnailContainerStyle, headerTextS
         style={imageStyle}
         source={{ uri: image }}
         />
+      </CardSection>
+      <CardSection>
+        <Button />
       </CardSection>
     </Card>
   );
