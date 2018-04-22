@@ -1,12 +1,17 @@
 import React from 'react';
 import { View } from 'react-native';
 
-const Card = () => {
+//props.children adds whatever from AlbumDetail
+
+const Card = (props) => {
     return (
-      <View style={styles.containerStyle}></View>
+      <View style={styles.containerStyle}>
+        {props.children}
+      </View>
     );
 };
 
+//this is the overall "card" that will go enclose three AlbumDetails
 const styles = {
   containerStyle: {
     borderWidth: 1,
