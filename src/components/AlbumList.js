@@ -12,5 +12,3 @@ class AlbumList extends Component {
 }
 
 export default AlbumList;
-
-//dsdlkfsd
