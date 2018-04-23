@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-//props.children adds whatever from AlbumDetail
+//props.children adds whatever from Album
 
 const Card = (props) => {
     return (
