@@ -13,9 +13,7 @@ const CardDetail = ({ college }) => {
 const { title, department, thumbnail_image, image, url } = college;
 
 // another destructure
-const {
-  thumbnailStyle, headerContentStyle, thumbnailContainerStyle, headerTextStyle, imageStyle }
-  = styles;
+const { thumbnailStyle, headerContentStyle, thumbnailContainerStyle, headerTextStyle, imageStyle } = styles;
 
   return (
     <Card>

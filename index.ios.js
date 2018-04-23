@@ -12,4 +12,4 @@ const App = () => (
 
 //flex: 1 stops the bounceback feel when scrollViewing
 
-AppRegistry.registerComponent('albums', () => App);
+AppRegistry.registerComponent('colleges', () => App);
