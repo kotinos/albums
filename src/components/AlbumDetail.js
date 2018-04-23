@@ -10,7 +10,7 @@ import Button from './Button';
 const AlbumDetail = ({ album }) => {
 
 //destructure from album
-const { title, artist, thumbnail_image, image, url } = album;
+const { title, department, thumbnail_image, image, url } = album;
 
 // another destructure
 const { thumbnailStyle, headerContentStyle, thumbnailContainerStyle, headerTextStyle, imageStyle } = styles;
@@ -26,7 +26,7 @@ const { thumbnailStyle, headerContentStyle, thumbnailContainerStyle, headerTextS
       </View>
         <View style={headerContentStyle}>
           <Text style={headerTextStyle}>{title}</Text>
-          <Text>{artist}</Text>
+          <Text>{department}</Text>
         </View>
       </CardSection>
       <CardSection>
