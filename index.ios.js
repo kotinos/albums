@@ -1,12 +1,12 @@
 import React from 'react';
 import { AppRegistry, View } from 'react-native';
 import Header from './src/components/Header';
-import AlbumList from './src/components/AlbumList';
+import InfoList from './src/components/InfoList';
 
 const App = () => (
   <View style={{ flex: 1 }}>
-    <Header headerText={'Albums'} />
-    <AlbumList />
+    <Header headerText={'University at Buffalo'} />
+    <InfoList />
   </View>
 );
 

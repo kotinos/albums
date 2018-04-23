@@ -5,15 +5,17 @@ import CardSection from './CardSection';
 import Button from './Button';
 
 //POSITIONING
-//image | (album title over album artist)
+//image | (Univeristy / Deparment)
 
-const AlbumDetail = ({ album }) => {
+const CardDetail = ({ college }) => {
 
 //destructure from album
-const { title, artist, thumbnail_image, image, url } = album;
+const { title, department, thumbnail_image, image, url } = college;
 
 // another destructure
-const { thumbnailStyle, headerContentStyle, thumbnailContainerStyle, headerTextStyle, imageStyle } = styles;
+const {
+  thumbnailStyle, headerContentStyle, thumbnailContainerStyle, headerTextStyle, imageStyle }
+  = styles;
 
   return (
     <Card>
@@ -26,7 +28,7 @@ const { thumbnailStyle, headerContentStyle, thumbnailContainerStyle, headerTextS
       </View>
         <View style={headerContentStyle}>
           <Text style={headerTextStyle}>{title}</Text>
-          <Text>{artist}</Text>
+          <Text>{department}</Text>
         </View>
       </CardSection>
       <CardSection>
@@ -71,4 +73,4 @@ const styles = {
 //image tag
 //CardSection->image->text->text<-CardSection
 
-export default AlbumDetail;
+export default CardDetail;
